@@ -10,3 +10,6 @@ data/processed/job_descriptions_processed.csv
 data/processed/resumes_processed.csv
 data/raw/job_descriptions.csv
 data/raw/resumes.csv
+data/processed/resumes_processed.csv
+data/raw/job_descriptions.csv
+data/raw/resumes.csv
