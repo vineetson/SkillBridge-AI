@@ -1,0 +1,50 @@
+# config.yaml - Environment-specific configuration
+
+# Model Configuration
+model:
+  embedding:
+    name: "all-MiniLM-L6-v2"  # Fast, lightweight embedding model
+    device: "cpu"
+  
+  llm:
+    name: "gpt2"  # Lightweight, can be changed to llama, mistral, etc.
+    device: "cpu"  # Change to "cuda" if GPU available
+    max_tokens: 300
+    temperature: 0.7
+    top_p: 0.95
+
+# RAG Configuration
+rag:
+  top_k: 5
+  similarity_threshold: 0.5
+  embedding_batch_size: 32
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  reload: false
+  workers: 1
+  
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+
+# Feature Flags
+features:
+  enable_caching: true
+  enable_fuzzy_skill_matching: true
+  enable_llm_explanations: true
+  
+# Performance
+performance:
+  batch_size: 32
+  max_candidates_per_batch: 100
+  
+# Skill Matching
+skill_matching:
+  threshold: 0.7  # Fuzzy match threshold (0-1)
+  use_synonyms: true
+  normalize_case: true
