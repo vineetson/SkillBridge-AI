@@ -1,6 +1,7 @@
 # 🧠 SkillBridge-AI
 
 > **Intelligent Job-Candidate Matching with AI-Powered Skill Gap Analysis & Personalized Learning Paths**
+> **Note: This Project is still in progress!!**
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)](https://github.com)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
